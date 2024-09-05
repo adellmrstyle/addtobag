@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    place-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1em;
+}
+
+.img-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.short img {
+    display: grid;
+    width: 40px;
+    height: 50px;
+    outline: 2px solid #9E0402;
+    border-radius: .35rem;
+    margin-bottom: 30%;
+}
+
+.big img {
+    height: 19rem;
+}
+
+.roundneck {
+    font-size: 13px;
+    color: #9E0402;
+    padding-bottom: .35rem;
+}
+
+.header {
+    font-size: 28px;
+    padding-bottom: 1rem;
+}
+
+.description {
+    color: #B8B9B7;
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+
+.price {
+    padding-bottom: .5rem;
+}
+
+.price i {
+    font-size: 22px;
+}
+
+.discount-price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.percentage {
+    background-color: #9E0402;
+    color: #F7EEE7;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: .35rem;
+}
+
+.actual-price {
+    font-size: 10px;
+    color: #B8B9B7;
+    padding-bottom: 1rem;
+}
+
+.choose {
+    padding-bottom: .35rem;
+}
+
+.sizes {
+    display: flex;
+    gap: 1rem;
+    font-size: 12px;
+    align-items: center;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+}
+
+.symbolm {
+    background-color: black;
+    color: white;
+    padding: .1rem .35rem;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: .35em;
+    border: 1px;
+    background-color: #9E0402;
+    color: #F7EEE7;
+    font-size: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        display: grid;
+        background-color: #FFFFFE;
+        border-radius: 10px;
+    }
+
+    .img-container {
+        display: flex;
+        gap: 1rem;
+        padding: .5rem;
+    }
+
+    .big img {
+        height: auto;
+        width: 100%;
+    }
+
+    .text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .roundneck {
+        padding-bottom: 1rem;
+    }
+    
+    .header {
+        font-size: 22px;
+        padding-bottom: 1rem;
+    }
+    
+    .description {
+        padding-bottom: 1rem;
+    }
+
+    .price {
+        padding-bottom: .5rem;
+    }
+    
+    .price i {
+        font-size: 22px;
+    }
+    
+    .actual-price {
+        padding-bottom: .5rem;
+    }
+
+    .choose {
+        padding-bottom: .5rem; 
+    }
+    
+    .sizes {
+        padding-bottom: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }    
+}
